@@ -1,0 +1,17 @@
+<div class="container">
+<table class="table">
+    <tr>
+      <th>id</th>
+      <th>Description</th>
+      <th>completed</th>
+      <th>Date</th>
+    </tr>
+    <!-- (Javve code for you )for (Todo todo: todos) -->
+    <tr *ngFor="let todo of todos">
+      <td>{{todo.id}}</td>
+      <td>{{todo.description}}</td>
+      <td>{{todo.done}}</td>
+      <td>{{todo.targetDate | date}}</td>
+    </tr>
+  </table>
+</div>
